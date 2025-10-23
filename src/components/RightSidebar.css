@@ -1,0 +1,56 @@
+.right-sidebar {
+  background: white;
+  border-left: 1px solid #e5e7eb;
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+
+.schedule-card,
+.integrations-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.schedule-card h3,
+.integrations-card h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.schedule-card p,
+.integrations-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.schedule-preview {
+  background: white;
+  border-radius: 12px;
+  height: 140px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.integration-icons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 1024px) {
+  .right-sidebar {
+    display: none;
+  }
+}

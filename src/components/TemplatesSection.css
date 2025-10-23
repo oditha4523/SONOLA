@@ -1,0 +1,101 @@
+.templates-section {
+  margin-bottom: 60px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.section-header .view-all {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.template-categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.template-category {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.template-category:hover {
+  transform: translateY(-4px);
+}
+
+.template-preview {
+  background: white;
+  border-radius: 12px;
+  height: 180px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.web-pages {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+.presentations {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.social-media {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.sales-pitch {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+.preview-content {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.template-category h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.template-category p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+@media (max-width: 1400px) {
+  .template-categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .template-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .template-categories {
+    grid-template-columns: 1fr;
+  }
+}
